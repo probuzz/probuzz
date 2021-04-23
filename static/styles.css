@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Teko';
+  font-weight: lighter;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.cover1 {
+  background-color: rgb(29, 47, 51);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  animation: slide 0.5s ease-out forwards 3.75s;
+}
+
+.cover2 {
+  background-color: rgb(22, 36, 39);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  animation: slide 0.7s ease-out forwards 3.5s;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/static/Rectangle\ 1.png');
+}
+
+.joinUs {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10vw;
+}
+
+.hide {
+  display: none;
+}
+
+.rect {
+  height: 40vh;
+  width: 100vw;
+  background-color: black;
+  overflow: hidden;
+}
+
+.c2atext {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.gfx {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+.rect2 {
+  height: 40vh;
+  width: 100vw;
+  background-color: #e5e5e5;
+}
+
+.wcCard {
+  min-height: 275px !important;
+}
+
+.svcCard {
+  min-height: 300px !important;
+}
+
+.member {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+  color: #4a4a4a;
+  max-width: 100%;
+  position: relative;
+}
+
+.member-content {
+  padding: 2rem;
+}
+
+.member-pic {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.member-name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.member-desc {
+  font-family: 'Poppins';
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.member-social {
+  display: flex;
+  padding-top: 1rem;
+  justify-content: space-between;
+}
+
+.member-social a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fil 1s ease forwards 2s;
+}
+
+#logo circle {
+  stroke-opacity: 0;
+}
+
+#logo path {
+  stroke-dasharray: 354px;
+  stroke-dashoffset: 354px;
+  animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fil {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #b3b3b3;
+  }
+}
+
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100vw;
+  }
+}
