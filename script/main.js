@@ -4,7 +4,7 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
-;(function () {
+; (function () {
   'use strict'
 
   /**
@@ -46,6 +46,7 @@
   let countdown = select('.countdown')
   const output = countdown.innerHTML
 
+  // 2021/4/25
   const countDownDate = function () {
     let timeleft =
       new Date(countdown.getAttribute('data-count')).getTime() -
