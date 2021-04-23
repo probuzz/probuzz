@@ -44,13 +44,17 @@
    * Countdown timer
    */
   let countdown = select('.countdown')
-  const output = countdown.innerHTML
+  const output = countdown.innerHTML;
+  let day_hour = 11;
+  let day_minute = 0;
 
   // 2021/4/25
   const countDownDate = function () {
     let timeleft =
       new Date(countdown.getAttribute('data-count')).getTime() -
       new Date().getTime()
+      + day_hour * 1000 * 60 * 60
+      + day_minute * 1000 * 60; 
 
     let days = Math.floor(timeleft / (1000 * 60 * 60 * 24))
     let hours = Math.floor(
