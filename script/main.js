@@ -53,7 +53,7 @@
       new Date(countdown.getAttribute('data-count')).getTime() -
       new Date().getTime()
       + day_hour * 1000 * 60 * 60
-      + day_minute * 1000 * 60; 
+      + day_minute * 1000 * 60;
 
     let days = Math.floor(timeleft / (1000 * 60 * 60 * 24))
     let hours = Math.floor(
