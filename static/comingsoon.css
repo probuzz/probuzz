@@ -9,9 +9,9 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
-  background: url('../static/bg.jpg') top center no-repeat;
+  background: url("../static/bg.jpg") top center no-repeat;
   /* background-size: cover; */
   position: relative;
 }
@@ -38,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 #main {
