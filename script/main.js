@@ -48,7 +48,6 @@
   let day_hour = 11;
   let day_minute = 0;
 
-  // 2021/4/25
   const countDownDate = function () {
     let timeleft =
       new Date(countdown.getAttribute("data-count")).getTime() -

@@ -48,18 +48,23 @@ body {
   background-color: black;
   overflow: hidden;
 }
-
+.c2a .container{
+  margin-top: 40px;
+}
 .c2atext {
   text-align: center;
   font-size: 2.5rem;
+  color: #b3b3b3;
 }
-
 .gfx {
   position: absolute;
   text-align: center;
   width: 100%;
   margin: auto;
   margin-top: 20vh;
+  /* filter: blur(7px);
+  -webkit-filter: blur(7px); */
+
 }
 
 .rect2 {
