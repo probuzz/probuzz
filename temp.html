@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko&family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./script/script.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>ProBuzz</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./static/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Teko&family=Poppins:wght@300;500&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" />
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="./script/script.js" defer></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <title>ProBuzz</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0GPBDJLJZ0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GPBDJLJZ0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag('config', 'G-0GPBDJLJZ0')
+    </script>
+  </head>
 
-    gtag('config', 'G-0GPBDJLJZ0');
-  </script>
+  <body>
+    <div class="cover1" style="z-index: 10"></div>
+    <div class="cover2" style="z-index: 11">
+      <svg
+        id="logo"
+        width="67"
+        height="84"
+        viewBox="0 0 67 84"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M33.5 2C31.8708 2 30.2657 2.12438 28.7008 2.3611V17.5914C30.5306 16.9053 32.5129 16.5321 34.5794 16.5321C43.8448 16.5321 51.3567 24.043 51.3567 33.3071C51.3567 42.5713 43.8448 50.0781 34.5794 50.0781C29.8163 50.0781 25.5187 48.092 22.465 44.9063C19.5999 41.9173 17.8343 37.873 17.8062 33.4114H17.8022V33.2951V6.18471C8.41236 11.5931 2.07223 21.6998 2.00401 33.2951H2V81L22.465 72.3979V63.0013C25.8959 64.2892 29.6157 64.9914 33.5 64.9914C50.8952 64.9914 65 50.8885 65 33.4957C65 16.1028 50.8952 2 33.5 2Z"
+          stroke="#B3B3B3"
+          stroke-width="3"
+          stroke-miterlimit="10"
+        />
+        <circle cx="34.5" cy="33.5" r="6" stroke="#B3B3B3" stroke-width="3" />
+      </svg>
+    </div>
 
-
-
-</head>
-
-<body>
-  <div class="cover1" style="z-index: 10"></div>
-  <div class="cover2" style="z-index: 11">
-    <svg id="logo" width="67" height="84" viewBox="0 0 67 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M33.5 2C31.8708 2 30.2657 2.12438 28.7008 2.3611V17.5914C30.5306 16.9053 32.5129 16.5321 34.5794 16.5321C43.8448 16.5321 51.3567 24.043 51.3567 33.3071C51.3567 42.5713 43.8448 50.0781 34.5794 50.0781C29.8163 50.0781 25.5187 48.092 22.465 44.9063C19.5999 41.9173 17.8343 37.873 17.8062 33.4114H17.8022V33.2951V6.18471C8.41236 11.5931 2.07223 21.6998 2.00401 33.2951H2V81L22.465 72.3979V63.0013C25.8959 64.2892 29.6157 64.9914 33.5 64.9914C50.8952 64.9914 65 50.8885 65 33.4957C65 16.1028 50.8952 2 33.5 2Z"
-        stroke="#B3B3B3" stroke-width="3" stroke-miterlimit="10" />
-      <circle cx="34.5" cy="33.5" r="6" stroke="#B3B3B3" stroke-width="3" />
-    </svg>
-  </div>
-
-  <!-- removed navbar :) remove comment to know why :( -->
-  <!-- <nav class="navbar is-black">
+    <!-- removed navbar :) remove comment to know why :( -->
+    <!-- <nav class="navbar is-black">
       <div class="container">
         <a
         role="button"
@@ -71,351 +93,457 @@
       </div>
     </nav> -->
 
-  <section class="hero is-fullheight" style="background-image: url(./static/Rectangle\ 1.png)">
-    <div class="container">
-      <div class="svg" style="padding-top: 5rem; scale: 150%">
-        <svg width="163" height="59" viewBox="0 0 163 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M44.328 9.52C43.816 7.664 42.024 4.144 37.992 1.968C28.84 -2.96 9.192 8.304 5.224 13.296C4.456 14.32 7.208 21.808 8.68 19.056C8.936 18.544 15.208 13.232 22.632 9.52C20.456 15.472 15.4 28.464 11.688 38.96C8.808 40.048 6.312 40.496 4.328 40.24C3.752 38.768 3.496 37.168 3.24 35.888C2.92 34.608 0.808 37.04 1 38.832C1.128 39.664 1.512 40.432 2.024 41.008C3.048 42.8 5.672 45.296 9.256 45.104H9.576C7.976 49.904 7.016 53.488 7.336 54.448C8.36 57.52 12.712 59.76 12.264 57.456C12.008 56.368 14.12 50.224 16.936 42.8C28.52 37.424 44.648 23.856 44.968 13.616C45.032 12.208 44.712 10.8 44.328 9.52ZM20.008 34.672C24.488 22.896 29.224 10.8 28.904 9.84C28.584 8.88 28.008 8.048 27.432 7.472C32.68 5.552 38.056 4.976 41.832 7.92C41.896 16.176 30.824 27.824 20.008 34.672ZM64.5025 23.536C63.9265 23.152 51.3825 43.056 45.1745 49.84C47.6705 40.24 56.4385 24.304 59.8945 21.808C60.4705 21.36 60.1505 20.592 59.4465 19.824C58.6785 18.736 57.2065 17.52 55.7345 17.648C53.4945 17.776 41.2705 24.752 38.5825 21.104C37.6865 19.824 37.4305 24.496 42.4225 26.48C44.0225 27.12 47.4785 26.032 50.9345 24.688C46.0705 32.816 40.1185 45.936 40.8865 50.288C41.2065 52.336 42.0385 53.552 42.8065 54.256C43.3185 54.896 43.9585 55.472 44.6625 55.344C47.7985 54.832 63.5425 29.808 65.0785 26.608C65.7185 25.264 64.8865 23.728 64.5025 23.536ZM84.7395 25.328C84.6115 24.752 83.2675 23.472 82.6275 23.536C82.3715 23.6 79.5555 26.096 75.9715 28.656C76.2275 27.312 76.2275 26.224 76.0355 25.456C75.9075 24.88 75.6515 24.368 75.2675 23.856C74.8835 22.576 72.8995 18.608 69.4435 19.12C65.6035 19.632 61.0595 23.28 60.0355 26.224C59.6515 27.312 59.6515 28.336 59.7795 29.232C56.1315 34.096 51.7795 42.736 52.8035 48.496C53.2515 50.992 55.6195 53.04 57.1555 54.064C58.0515 54.704 59.1395 55.28 60.0355 55.152C64.4515 54.384 71.5555 42.16 74.6915 33.328C79.9395 30.128 84.8675 25.648 84.7395 25.328ZM71.9395 22.96C72.1315 25.2 71.2995 28.592 69.9555 32.24C67.3955 33.456 64.8355 34.224 62.7235 33.776C64.2595 31.6 65.7955 30.192 67.0115 30C67.7795 29.872 66.6275 27.44 65.2195 26.224C67.2675 24.56 69.8915 23.28 71.9395 22.96ZM57.0275 51.632C56.0675 47.088 58.8195 39.664 62.0195 34.8C62.4035 35.184 62.9155 35.696 63.5555 36.08C64.7715 36.848 66.4355 36.848 68.2915 36.336C65.1555 43.184 60.6115 50.032 57.0275 51.632ZM101.732 24.048C101.54 25.776 96.8675 32.88 92.4515 38.448C94.1155 34.416 95.0755 30.832 94.7555 29.616C94.6275 29.04 94.3075 28.528 93.9875 28.144C93.6675 27.504 91.6195 25.584 89.6355 25.968C88.4835 26.224 85.6675 29.36 83.2995 32.88C87.1395 24.432 91.1715 16.624 91.8755 15.664C93.7955 13.104 87.2675 9.84 87.2035 10.672C87.2035 11.632 69.6035 46.256 70.8835 52.272C71.2675 54.32 75.9395 57.072 75.5555 54.704C75.2995 53.36 76.1315 50.416 77.4755 46.704C80.0355 41.456 85.9875 32.944 90.4675 29.616C89.1235 35.952 82.2115 48.944 77.6035 50.032C75.9395 50.48 79.9075 54.512 81.8915 53.808C83.6835 53.104 85.7955 50.736 87.7155 47.664C91.1715 45.04 102.884 29.744 103.78 26.288C104.356 24.048 101.86 22.832 101.732 24.048ZM125.56 23.984C125.24 26.16 115.704 42.672 110.008 47.152C110.776 40.112 118.904 28.016 119.672 25.136C119.864 24.24 117.176 21.872 115.896 22.128C115.832 22.128 115.768 22.256 115.576 22.448C113.4 24.432 102.392 40.176 97.2715 48.24C99.7035 38.064 109.368 23.728 108.984 22.384C108.472 20.656 104.248 18.416 104.056 19.824C103.864 20.784 91.4475 41.648 92.4715 49.392C92.8555 52.4 95.1595 54.448 96.3115 54.64C97.0795 55.024 97.9755 55.088 98.2315 54.384C99.1915 51.568 104.056 43.568 108.408 36.784C106.68 41.136 105.528 45.36 106.168 47.536C106.552 48.88 107.256 49.648 107.96 50.096C108.6 50.736 109.496 51.376 110.84 51.44C114.296 51.696 127.416 29.68 127.608 26.224C127.736 23.92 125.688 22.768 125.56 23.984ZM143.102 19.824C142.334 18.736 140.862 17.52 139.39 17.648C137.15 17.776 124.926 24.752 122.238 21.104C121.342 19.824 121.086 24.496 126.078 26.48C127.55 27.056 130.43 26.224 133.438 25.136C127.294 33.456 118.91 46.448 118.27 49.584C117.95 51.248 119.038 52.592 120.062 53.36C120.702 53.872 121.406 54.256 122.174 54.192C124.414 54.064 135.998 42.096 138.686 47.472C139.39 48.816 140.158 43.44 134.846 42.096C132.542 41.52 127.87 44.72 124.094 47.216C128.958 38.128 140.414 24.048 143.55 21.808C144.126 21.36 143.806 20.592 143.102 19.824ZM162.164 19.824C161.396 18.736 159.924 17.52 158.452 17.648C156.212 17.776 143.988 24.752 141.3 21.104C140.404 19.824 140.148 24.496 145.14 26.48C146.612 27.056 149.492 26.224 152.5 25.136C146.356 33.456 137.972 46.448 137.332 49.584C137.012 51.248 138.1 52.592 139.124 53.36C139.764 53.872 140.468 54.256 141.236 54.192C143.476 54.064 155.06 42.096 157.748 47.472C158.452 48.816 159.22 43.44 153.908 42.096C151.604 41.52 146.932 44.72 143.156 47.216C148.02 38.128 159.476 24.048 162.612 21.808C163.188 21.36 162.868 20.592 162.164 19.824Z"
-            fill="white" />
-        </svg>
+    <section
+      class="hero is-fullheight"
+      style="background-image: url(./static/Rectangle\ 1.png)"
+    >
+      <div class="container">
+        <div class="svg" style="padding-top: 5rem; scale: 150%">
+          <svg
+            width="163"
+            height="59"
+            viewBox="0 0 163 59"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M44.328 9.52C43.816 7.664 42.024 4.144 37.992 1.968C28.84 -2.96 9.192 8.304 5.224 13.296C4.456 14.32 7.208 21.808 8.68 19.056C8.936 18.544 15.208 13.232 22.632 9.52C20.456 15.472 15.4 28.464 11.688 38.96C8.808 40.048 6.312 40.496 4.328 40.24C3.752 38.768 3.496 37.168 3.24 35.888C2.92 34.608 0.808 37.04 1 38.832C1.128 39.664 1.512 40.432 2.024 41.008C3.048 42.8 5.672 45.296 9.256 45.104H9.576C7.976 49.904 7.016 53.488 7.336 54.448C8.36 57.52 12.712 59.76 12.264 57.456C12.008 56.368 14.12 50.224 16.936 42.8C28.52 37.424 44.648 23.856 44.968 13.616C45.032 12.208 44.712 10.8 44.328 9.52ZM20.008 34.672C24.488 22.896 29.224 10.8 28.904 9.84C28.584 8.88 28.008 8.048 27.432 7.472C32.68 5.552 38.056 4.976 41.832 7.92C41.896 16.176 30.824 27.824 20.008 34.672ZM64.5025 23.536C63.9265 23.152 51.3825 43.056 45.1745 49.84C47.6705 40.24 56.4385 24.304 59.8945 21.808C60.4705 21.36 60.1505 20.592 59.4465 19.824C58.6785 18.736 57.2065 17.52 55.7345 17.648C53.4945 17.776 41.2705 24.752 38.5825 21.104C37.6865 19.824 37.4305 24.496 42.4225 26.48C44.0225 27.12 47.4785 26.032 50.9345 24.688C46.0705 32.816 40.1185 45.936 40.8865 50.288C41.2065 52.336 42.0385 53.552 42.8065 54.256C43.3185 54.896 43.9585 55.472 44.6625 55.344C47.7985 54.832 63.5425 29.808 65.0785 26.608C65.7185 25.264 64.8865 23.728 64.5025 23.536ZM84.7395 25.328C84.6115 24.752 83.2675 23.472 82.6275 23.536C82.3715 23.6 79.5555 26.096 75.9715 28.656C76.2275 27.312 76.2275 26.224 76.0355 25.456C75.9075 24.88 75.6515 24.368 75.2675 23.856C74.8835 22.576 72.8995 18.608 69.4435 19.12C65.6035 19.632 61.0595 23.28 60.0355 26.224C59.6515 27.312 59.6515 28.336 59.7795 29.232C56.1315 34.096 51.7795 42.736 52.8035 48.496C53.2515 50.992 55.6195 53.04 57.1555 54.064C58.0515 54.704 59.1395 55.28 60.0355 55.152C64.4515 54.384 71.5555 42.16 74.6915 33.328C79.9395 30.128 84.8675 25.648 84.7395 25.328ZM71.9395 22.96C72.1315 25.2 71.2995 28.592 69.9555 32.24C67.3955 33.456 64.8355 34.224 62.7235 33.776C64.2595 31.6 65.7955 30.192 67.0115 30C67.7795 29.872 66.6275 27.44 65.2195 26.224C67.2675 24.56 69.8915 23.28 71.9395 22.96ZM57.0275 51.632C56.0675 47.088 58.8195 39.664 62.0195 34.8C62.4035 35.184 62.9155 35.696 63.5555 36.08C64.7715 36.848 66.4355 36.848 68.2915 36.336C65.1555 43.184 60.6115 50.032 57.0275 51.632ZM101.732 24.048C101.54 25.776 96.8675 32.88 92.4515 38.448C94.1155 34.416 95.0755 30.832 94.7555 29.616C94.6275 29.04 94.3075 28.528 93.9875 28.144C93.6675 27.504 91.6195 25.584 89.6355 25.968C88.4835 26.224 85.6675 29.36 83.2995 32.88C87.1395 24.432 91.1715 16.624 91.8755 15.664C93.7955 13.104 87.2675 9.84 87.2035 10.672C87.2035 11.632 69.6035 46.256 70.8835 52.272C71.2675 54.32 75.9395 57.072 75.5555 54.704C75.2995 53.36 76.1315 50.416 77.4755 46.704C80.0355 41.456 85.9875 32.944 90.4675 29.616C89.1235 35.952 82.2115 48.944 77.6035 50.032C75.9395 50.48 79.9075 54.512 81.8915 53.808C83.6835 53.104 85.7955 50.736 87.7155 47.664C91.1715 45.04 102.884 29.744 103.78 26.288C104.356 24.048 101.86 22.832 101.732 24.048ZM125.56 23.984C125.24 26.16 115.704 42.672 110.008 47.152C110.776 40.112 118.904 28.016 119.672 25.136C119.864 24.24 117.176 21.872 115.896 22.128C115.832 22.128 115.768 22.256 115.576 22.448C113.4 24.432 102.392 40.176 97.2715 48.24C99.7035 38.064 109.368 23.728 108.984 22.384C108.472 20.656 104.248 18.416 104.056 19.824C103.864 20.784 91.4475 41.648 92.4715 49.392C92.8555 52.4 95.1595 54.448 96.3115 54.64C97.0795 55.024 97.9755 55.088 98.2315 54.384C99.1915 51.568 104.056 43.568 108.408 36.784C106.68 41.136 105.528 45.36 106.168 47.536C106.552 48.88 107.256 49.648 107.96 50.096C108.6 50.736 109.496 51.376 110.84 51.44C114.296 51.696 127.416 29.68 127.608 26.224C127.736 23.92 125.688 22.768 125.56 23.984ZM143.102 19.824C142.334 18.736 140.862 17.52 139.39 17.648C137.15 17.776 124.926 24.752 122.238 21.104C121.342 19.824 121.086 24.496 126.078 26.48C127.55 27.056 130.43 26.224 133.438 25.136C127.294 33.456 118.91 46.448 118.27 49.584C117.95 51.248 119.038 52.592 120.062 53.36C120.702 53.872 121.406 54.256 122.174 54.192C124.414 54.064 135.998 42.096 138.686 47.472C139.39 48.816 140.158 43.44 134.846 42.096C132.542 41.52 127.87 44.72 124.094 47.216C128.958 38.128 140.414 24.048 143.55 21.808C144.126 21.36 143.806 20.592 143.102 19.824ZM162.164 19.824C161.396 18.736 159.924 17.52 158.452 17.648C156.212 17.776 143.988 24.752 141.3 21.104C140.404 19.824 140.148 24.496 145.14 26.48C146.612 27.056 149.492 26.224 152.5 25.136C146.356 33.456 137.972 46.448 137.332 49.584C137.012 51.248 138.1 52.592 139.124 53.36C139.764 53.872 140.468 54.256 141.236 54.192C143.476 54.064 155.06 42.096 157.748 47.472C158.452 48.816 159.22 43.44 153.908 42.096C151.604 41.52 146.932 44.72 143.156 47.216C148.02 38.128 159.476 24.048 162.612 21.808C163.188 21.36 162.868 20.592 162.164 19.824Z"
+              fill="white"
+            />
+          </svg>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="section is-medium" style="text-align: center">
-    <div class="container">
-      <div class="title welcome" style="margin-bottom: 15vh; font-size: 3rem">
-        Welcome to ProBuzz
-      </div>
-      <div class="columns" style="text-align: left">
-        <div class="column is-4">
-          <div class="card wcCard">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="./static/welcome/creativity 1.png" alt="Placeholder image" />
-                  </figure>
+    </section>
+    <section class="section is-medium" style="text-align: center">
+      <div class="container">
+        <div class="title welcome" style="margin-bottom: 15vh; font-size: 3rem">
+          Welcome to ProBuzz
+        </div>
+        <div class="columns" style="text-align: left">
+          <div class="column is-4">
+            <div class="card wcCard">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="./static/welcome/creativity 1.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="heading" style="font-size: 2rem">
+                      Creative Design
+                    </p>
+                  </div>
                 </div>
-                <div class="media-content">
-                  <p class="heading" style="font-size: 2rem">
-                    Creative Design
-                  </p>
+                <div
+                  class="content"
+                  style="font-family: 'Poppins'; font-weight: lighter"
+                >
+                  From User Interface - User Experience to designing Products,
+                  we at Probuzz maintain professional standards to meet upto
+                  your expectations.
                 </div>
               </div>
-              <div class="content" style="font-family: 'Poppins'; font-weight: lighter">
-                From User Interface - User Experience to designing Products,
-                we at Probuzz maintain professional standards to meet upto
-                your expectations.
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="card wcCard">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="./static/welcome/coding 1.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="heading" style="font-size: 2rem">
+                      Standard Codes
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                  style="font-family: 'Poppins'; font-weight: lighter"
+                >
+                  Development is done keeping the rules of simplicity and
+                  quality in mind, the codes are easy to understand well
+                  indented and quoted properly.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="card wcCard">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="./static/welcome/support 1.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="heading" style="font-size: 2rem">Fast Support</p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                  style="font-family: 'Poppins'; font-weight: lighter"
+                >
+                  Easy deployment and domain changes as per your requirement are
+                  done professionaly without any flaws. No issues are overlooked
+                  and are responded to ASAP.
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="column is-4">
-          <div class="card wcCard">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="./static/welcome/coding 1.png" alt="Placeholder image" />
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="heading" style="font-size: 2rem">
-                    Standard Codes
-                  </p>
-                </div>
-              </div>
-              <div class="content" style="font-family: 'Poppins'; font-weight: lighter">
-                Development is done keeping the rules of simplicity and
-                quality in mind, the codes are easy to understand well
-                indented and quoted properly.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="card wcCard">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="./static/welcome/support 1.png" alt="Placeholder image" />
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="heading" style="font-size: 2rem">Fast Support</p>
-                </div>
-              </div>
-              <div class="content" style="font-family: 'Poppins'; font-weight: lighter">
-                Easy deployment and domain changes as per your requirement are
-                done professionaly without any flaws. No issues are overlooked
-                and are responded to ASAP.
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="c2a">
-    <div class="rect">
-      <!-- <div class="gfx" style="text-align: center">
+    <section class="c2a">
+      <div class="rect">
+        <!-- <div class="gfx" style="text-align: center">
           <img src="./static/welcome/Group 3.png" alt="" style="transform: translateY(-50%)" />
         </div> -->
+        <div class="container">
+          <div class="c2atext">
+            <div>Like what we do at ProBuzz?</div>
+            <div class="subtitle">
+              Join the community & do your part ! #ProBuzzer
+            </div>
+            <a
+              class="button is-white"
+              target="_blank"
+              href="https://forms.gle/6cEYA6HiqkBH7Q398"
+              style="width: 150px"
+              >Join Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-medium" style="text-align: center">
+      <div class="title services" style="margin: 10vh 0; font-size: 3rem">
+        Services
+      </div>
       <div class="container">
-        <div class="c2atext">
-          <div>Like what we do at ProBuzz?</div>
-          <div class="subtitle">
-            Join the community & do your part ! #ProBuzzer
+        <div class="columns" style="text-align: left">
+          <div class="column">
+            <div class="card svcCard">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="./static/services/icons8-pen-100.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="heading" style="font-size: 2rem">UI UX Design</p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                  style="font-family: 'Poppins'; font-weight: lighter"
+                >
+                  Probuzz has highly trained designers with the current trends
+                  to keep you updated in the User Interface market for your apps
+                  & web.
+                </div>
+              </div>
+            </div>
           </div>
-          <a class="button is-white" target="_blank" href="https://forms.gle/6cEYA6HiqkBH7Q398"
-            style="width: 150px;">Join Us</a>
+          <div class="column">
+            <div class="card svcCard">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="./static/services/icons8-product-100.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="heading" style="font-size: 2rem">
+                      Product Design
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                  style="font-family: 'Poppins'; font-weight: lighter"
+                >
+                  Quality products start with the quality design, we at ProBuzz
+                  do it with integrity & make sure to avoid any flaws to get the
+                  premium outputs.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card svcCard">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="./static/services/icons8-smartphone-tablet-100.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="heading" style="font-size: 2rem">
+                      App Development
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                  style="font-family: 'Poppins'; font-weight: lighter"
+                >
+                  Developing apps for your business for both Android and IOS
+                  devices. Fast, Bug-free, efficient are qualities to name a
+                  few.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns" style="text-align: left">
+          <div class="column">
+            <div class="card svcCard">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="./static/services/icons8-website-100.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="heading" style="font-size: 2rem">
+                      web Development
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                  style="font-family: 'Poppins'; font-weight: lighter"
+                >
+                  ProBuzz excels in providing you with your business websites
+                  that work seamlessly and are responsive as well, easy to
+                  update and upgrade.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card svcCard">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="./static/services/icons8-web-marketing-100.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="heading" style="font-size: 2rem">SEO</p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                  style="font-family: 'Poppins'; font-weight: lighter"
+                >
+                  Optimised search engine responses to make sure you pop up on
+                  the first page of Google and customers get to you in no matter
+                  of time.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card svcCard">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img
+                        src="./static/services/icons8-digital-signature-100.png"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="heading" style="font-size: 2rem">Marketing</p>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                  style="font-family: 'Poppins'; font-weight: lighter"
+                >
+                  ProBuzz does it's digital marketing at its best! Don't bother
+                  about the fame, just stay in the game :3
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section is-medium" style="text-align: center">
-    <div class="title services" style="margin: 10vh 0; font-size: 3rem">
-      Services
-    </div>
-    <div class="container">
-      <div class="columns" style="text-align: left">
-        <div class="column">
-          <div class="card svcCard">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="./static/services/icons8-pen-100.png" alt="Placeholder image" />
-                  </figure>
+    <section class="section is-medium">
+      <div class="container is-max-desktop">
+        <div
+          class="title team"
+          style="text-align: center; font-size: 3rem; padding-bottom: 3rem"
+        >
+          Founding Members
+        </div>
+        <div class="columns">
+          <div class="column">
+            <div class="member">
+              <div class="member-content">
+                <div class="member-pic">
+                  <img src="./static/teams/abhinav.jpg" alt="" />
                 </div>
-                <div class="media-content">
-                  <p class="heading" style="font-size: 2rem">UI UX Design</p>
+                <div class="member-name">Abhinav Singh</div>
+                <div class="member-desc">Co-Founder</div>
+                <div class="member-social">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/abhinavsinghpro/"
+                    ><i class="fab fa-linkedin"></i>&ensp;LinkedIn</a
+                  >
+                  <a target="_blank" href="https://twitter.com/abhinavsinghpro"
+                    ><i class="fab fa-twitter"></i>&ensp;Twitter</a
+                  >
+                  <a target="_blank" href="https://github.com/balagru"
+                    ><i class="fab fa-github"></i>&ensp;GitHub</a
+                  >
                 </div>
-              </div>
-              <div class="content" style="font-family: 'Poppins'; font-weight: lighter">
-                Probuzz has highly trained designers with the current trends
-                to keep you updated in the User Interface market for your apps
-                & web.
               </div>
             </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="card svcCard">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="./static/services/icons8-product-100.png" alt="Placeholder image" />
-                  </figure>
+          <div class="column">
+            <div class="member">
+              <div class="member-content">
+                <div class="member-pic">
+                  <img src="./static/teams/abhishek.jpg" alt="" />
                 </div>
-                <div class="media-content">
-                  <p class="heading" style="font-size: 2rem">
-                    Product Design
-                  </p>
+                <div class="member-name">Abhishek Varde</div>
+                <div class="member-desc">Co-Founder</div>
+                <div class="member-social">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/abhishek-varde-630b88153"
+                    ><i class="fab fa-linkedin"></i>&ensp;LinkedIn</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/AbhishekVarde?s=20"
+                    ><i class="fab fa-twitter"></i>&ensp;Twitter</a
+                  >
+                  <a target="_blank" href="https://github.com/abhishekvarde"
+                    ><i class="fab fa-github"></i>&ensp;GitHub</a
+                  >
                 </div>
-              </div>
-              <div class="content" style="font-family: 'Poppins'; font-weight: lighter">
-                Quality products start with the quality design, we at ProBuzz
-                do it with integrity & make sure to avoid any flaws to get the
-                premium outputs.
               </div>
             </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="card svcCard">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="./static/services/icons8-smartphone-tablet-100.png" alt="Placeholder image" />
-                  </figure>
+          <div class="column">
+            <div class="member">
+              <div class="member-content">
+                <div class="member-pic">
+                  <img src="./static/teams/utkarsh.jpg" alt="" />
                 </div>
-                <div class="media-content">
-                  <p class="heading" style="font-size: 2rem">
-                    App Development
-                  </p>
+                <div class="member-name">Utkarsh</div>
+                <div class="member-desc">Co-Founder</div>
+                <div
+                  class="member-social"
+                  style="justify-content: space-around"
+                >
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/utkarsh-kumar-907a9a149/"
+                  >
+                    <i class="fab fa-linkedin"></i>&ensp;LinkedIn</a
+                  >
+                  <a target="_blank" href="https://github.com/utkarshkumar387"
+                    ><i class="fab fa-github"> </i>&ensp;GitHub</a
+                  >
                 </div>
-              </div>
-              <div class="content" style="font-family: 'Poppins'; font-weight: lighter">
-                Developing apps for your business for both Android and IOS
-                devices. Fast, Bug-free, efficient are qualities to name a
-                few.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="columns" style="text-align: left">
-        <div class="column">
-          <div class="card svcCard">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="./static/services/icons8-website-100.png" alt="Placeholder image" />
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="heading" style="font-size: 2rem">
-                    web Development
-                  </p>
-                </div>
-              </div>
-              <div class="content" style="font-family: 'Poppins'; font-weight: lighter">
-                ProBuzz excels in providing you with your business websites
-                that work seamlessly and are responsive as well, easy to
-                update and upgrade.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card svcCard">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="./static/services/icons8-web-marketing-100.png" alt="Placeholder image" />
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="heading" style="font-size: 2rem">SEO</p>
-                </div>
-              </div>
-              <div class="content" style="font-family: 'Poppins'; font-weight: lighter">
-                Optimised search engine responses to make sure you pop up on
-                the first page of Google and customers get to you in no matter
-                of time.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card svcCard">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48">
-                    <img src="./static/services/icons8-digital-signature-100.png" alt="Placeholder image" />
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="heading" style="font-size: 2rem">Marketing</p>
-                </div>
-              </div>
-              <div class="content" style="font-family: 'Poppins'; font-weight: lighter">
-                ProBuzz does it's digital marketing at its best! Don't bother
-                about the fame, just stay in the game :3
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section is-medium">
-    <div class="container is-max-desktop">
-      <div class="title team" style="text-align: center; font-size: 3rem; padding-bottom: 3rem">
-        Founding Members
-      </div>
-      <div class="columns">
-        <div class="column">
-          <div class="member">
-            <div class="member-content">
-              <div class="member-pic">
-                <img src="./static/teams/abhinav.jpg" alt="" />
-              </div>
-              <div class="member-name">Abhinav Singh</div>
-              <div class="member-desc">Co-Founder</div>
-              <div class="member-social">
-                <a target="_blank" href="https://www.linkedin.com/in/abhinavsinghpro/"><i
-                    class="fab fa-linkedin"></i>&ensp;LinkedIn</a>
-                <a target="_blank" href="https://twitter.com/abhinavsinghpro"><i
-                    class="fab fa-twitter"></i>&ensp;Twitter</a>
-                <a target="_blank" href="https://github.com/balagru"><i class="fab fa-github"></i>&ensp;GitHub</a>
+    <footer class="footer" style="background-color: black">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div>
+              <div class="heading" style="font-size: 1.2rem">probuzz 2021</div>
+              <a href="/" style="text-decoration: none; color: inherit"
+                >©&ensp;probuzz.co.in</a
+              >
+              <br /><span>Nanded City, Pune - 411041</span> <br /><span
+                >Reach us at <br />
+                <a
+                  href="info@probuzz.co.in"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <i class="fas fa-envelope">&ensp;</i> info@probuzz.co.in</a
+                ></span
+              >
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <div class="heading" style="font-size: 1.2rem">Follow Us :</div>
+              <div class="social-media">
+                <a href="https://www.instagram.com/probuzzco/"
+                  ><i class="fab fa-instagram">&ensp;</i>
+                  Instagram.com/ProBuzz</a
+                >
+                <br />
+                <a href="https://twitter.com/ProBuzz1"
+                  ><i class="fab fa-twitter">&ensp;</i> Twitter.com/ProBuzz</a
+                >
+                <br />
+                <a href="www.linkedin.com/in/probuzz"
+                  ><i class="fab fa-linkedin">&ensp;</i> LinkedIn.com/ProBuzz</a
+                >
+                <br />
               </div>
             </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="member">
-            <div class="member-content">
-              <div class="member-pic">
-                <img src="./static/teams/abhishek.jpg" alt="" />
-              </div>
-              <div class="member-name">Abhishek Varde</div>
-              <div class="member-desc">Co-Founder</div>
-              <div class="member-social">
-                <a target="_blank" href="https://www.linkedin.com/in/abhishek-varde-630b88153"><i
-                    class="fab fa-linkedin"></i>&ensp;LinkedIn</a>
-                <a target="_blank" href="https://twitter.com/AbhishekVarde?s=20"><i
-                    class="fab fa-twitter"></i>&ensp;Twitter</a>
-                <a target="_blank" href="https://github.com/abhishekvarde"><i class="fab fa-github"></i>&ensp;GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="member">
-            <div class="member-content">
-              <div class="member-pic">
-                <img src="./static/teams/utkarsh.jpg" alt="" />
-              </div>
-              <div class="member-name">Utkarsh</div>
-              <div class="member-desc">Co-Founder</div>
-              <div class="member-social">
-                <a target="_blank" href="https://www.linkedin.com/in/utkarsh-kumar-907a9a149/">
-                  <i class="fab fa-linkedin"></i>&ensp;LinkedIn</a>
-                <a target="_blank" href=""><i class="fab fa-twitter"></i>&ensp;Twitter</a>
-                <a target="_blank" href="https://github.com/utkarshkumar387"><i class="fab fa-github">
-                  </i>&ensp;GitHub</a>
-              </div>
-            </div>
+          <div class="column">
+            <div class="subtitle">All Rights Reserved - ProBuzz 2021</div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <footer class="footer" style="background-color: black">
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <div>
-            <div class="heading" style="font-size: 1.2rem">probuzz 2021</div>
-            <a href="/" style="text-decoration: none; color: inherit">©&ensp;probuzz.co.in</a>
-            <br /><span>Nanded City, Pune - 411041</span> <br /><span>Reach us at <br />
-              <a href="info@probuzz.co.in" style="text-decoration: none; color: inherit">
-                <i class="fas fa-envelope">&ensp;</i> info@probuzz.co.in</a></span>
-          </div>
-        </div>
-        <div class="column">
-          <div>
-            <div class="heading" style="font-size: 1.2rem">Follow Us :</div>
-            <div class="social-media">
-              <a href="https://www.instagram.com/probuzzco/"><i class="fab fa-instagram">&ensp;</i>
-                Instagram.com/ProBuzz</a>
-              <br />
-              <a href="https://twitter.com/ProBuzz1"><i class="fab fa-twitter">&ensp;</i> Twitter.com/ProBuzz</a>
-              <br />
-              <a href="www.linkedin.com/in/probuzz"><i class="fab fa-linkedin">&ensp;</i> LinkedIn.com/ProBuzz</a>
-              <br />
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="subtitle">All Rights Reserved - ProBuzz 2021</div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
