@@ -21,10 +21,6 @@ $(function () {
   }, 4500)
 })
 
-joinUs = () => {
-  window.location.href = 'https://forms.gle/qtmhPxvRY8JHovUaA' //google form link
-}
-
 // document.addEventListener('DOMContentLoaded', () => {
 //   const $navbarBurgers = Array.prototype.slice.call(
 //     document.querySelectorAll('.navbar-burger'),
