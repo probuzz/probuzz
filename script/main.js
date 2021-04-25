@@ -46,7 +46,7 @@
   let countdown = select(".countdown");
   const output = countdown.innerHTML;
   let day_hour = 11;
-  let day_minute = 0;
+  let day_minute = -47;
 
   const countDownDate = function () {
     let timeleft =
@@ -67,6 +67,9 @@
       .replace("%h", hours)
       .replace("%m", minutes)
       .replace("%s", seconds);
+    if (days == 0 && hours == 0 && minutes == 0 && seconds == 0) {
+      window.location.replace('http://probuzz.co.in/temp.html');
+    }
   };
   countDownDate();
   setInterval(countDownDate, 1000);
