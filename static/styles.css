@@ -9,7 +9,9 @@ body {
   height: 100vh;
   overflow-y: hidden;
 }
-
+a{
+  z-index: 999;
+}
 .cover1 {
   background-color: rgb(29, 47, 51);
   height: 100vh;
