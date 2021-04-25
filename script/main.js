@@ -69,7 +69,9 @@
       .replace("%s", seconds);
     if (days == 0 && hours == 0 && minutes == 0 && seconds == 0) {
       window.location.replace('http://probuzz.co.in/temp.html');
+
     }
+    if( timeleft <= 0 )  window.location.replace('http://probuzz.co.in/temp.html');
   };
   countDownDate();
   setInterval(countDownDate, 1000);
