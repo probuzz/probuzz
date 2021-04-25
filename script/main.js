@@ -46,7 +46,7 @@
   let countdown = select(".countdown");
   const output = countdown.innerHTML;
   let day_hour = 11;
-  let day_minute = -47;
+  let day_minute = -46;
 
   const countDownDate = function () {
     let timeleft =
